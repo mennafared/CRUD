@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <h1 class="text-center mx-auto mt-2 p-3 border shadow-sm rounded fs-1">
+    <span class="text-info">E</span>lonsol
+    <span class="text-info">S</span>tore
+    <i class="fa-solid fa-store text-info"></i>
+  </h1>
+
+  <div class="w-75 mx-auto py-5">
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control border-0 rounded-0 border-bottom" id="productName"
+        placeholder="name@example.com">
+      <label for="productName">Product Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="number" class="form-control border-0 rounded-0 border-bottom" id="productPrice"
+        placeholder="name@example.com">
+      <label for="productPrice">Product Price</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <select class="form-select border-0 rounded-0 border-bottom" id="productCategory"
+        aria-label="Floating label select example">
+        <option selected disabled hidden>Choose Product Category</option>
+        <option>Mobile Phone</option>
+        <option>Printer</option>
+        <option>Laptop</option>
+        <option>Camera</option>
+        <option>TV</option>
+      </select>
+      <label for="productCategory">Product Category</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <textarea class="form-control border-0 rounded-0 border-bottom" placeholder="Leave a comment here"
+        id="productDescription"></textarea>
+      <label for="productDescription">Product Description</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="file" class="form-control border-0 rounded-0 border-bottom" id="productImage"
+        placeholder="name@example.com">
+      <label for="productImage">Product Image</label>
+    </div>
+
+    <button id="addProductButton" onclick="addProduct()" type="button" class="btn btn-info text-light my-2 d-block">Add Product</button>
+    <button id="updateProductBuuton" onclick="updateProduct()" type="button" class="btn btn-danger text-light my-2 d-none">Update Product</button>
+
+  </div>
+
+  <div class="container">
+    <input type="search" oninput="searchProduct(this.value)" class="form-control border-2 my-4" placeholder="Search By Product Name">
+    <div id="productContainerElement" class="row row-cols-2 row-col-md-3 row-cols-lg-4 row-cols-xl-5">
+
+      <!-- <div class="col mb-4">
+        <div class="border shadow-sm p-2">
+          <div class="product-img mb-4">
+            <img src="./images/Apple iPhone 13.jpg" class="w-100 h-100 object-fit-contain" alt="">
+          </div>
+          <h3 class="fs-5">Lorem, ipsum.</h3>
+          <p class="fs-6 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, totam.</p>
+          <p><span class="fw-semibold">Category: </span>Mobile Phone</p>
+          <div class="d-flex justify-content-between pe-3">
+            <p class="fw-semibold">15000 EGP</p>
+            <div>
+              <i class="fa-solid fa-trash-can fs-5 text-danger"></i>
+              <i class="fa-solid fa-pen-to-square fs-5 text-success"></i>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
